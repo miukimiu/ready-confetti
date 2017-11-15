@@ -1,6 +1,12 @@
 # Ready Confetti 
 A Bootstrap 4 one page wedding planner template
 
+This is a project for a course that I'm taking! But you can use the template! :D
+
+## Preview
+You can find the project here:
+https://miukimiu.github.io/ready-confetti/
+
 ### Version
 
 1.0.0

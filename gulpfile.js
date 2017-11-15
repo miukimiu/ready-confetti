@@ -2,12 +2,18 @@ const gulp        = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass        = require('gulp-sass');
 const prefix      = require('gulp-autoprefixer');
+const ghPages     = require('gulp-gh-pages');
 
 // [gulp-sass] error message in file_name on line 1
 
 var prefixerOptions = {
 browsers: ['last 2 versions']
 };
+
+gulp.task('deploy', function() {
+  return gulp.src(['./src/**/*', '!./src/scss/**/*'])
+    .pipe(ghPages());
+});
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
