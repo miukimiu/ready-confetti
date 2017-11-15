@@ -5560,6 +5560,16 @@ Breakpoints
 /************************
 Grid
 ************************/
+.btn {
+  transition: all 300ms ease-in;
+  transform: scale(1); }
+  .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); }
+  .btn.disabled:hover {
+    transform: scale(1);
+    box-shadow: none; }
+
 /************************
 Breakpoints
 ************************/
@@ -5741,13 +5751,23 @@ section {
 
 .section-testimonials .carousel {
   position: relative;
-  color: #fff; }
+  color: #fff;
+  position: relative; }
+  .section-testimonials .carousel__title {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    z-index: 9; }
   .section-testimonials .carousel-item {
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 8rem 0 14rem; }
+    padding: 10rem 0 14rem; }
+    @media (min-width: 576px) {
+      .section-testimonials .carousel-item {
+        padding: 14rem 0 14rem; } }
     .section-testimonials .carousel-item--1 {
       background-image: url("../img/testimonial/testimonial-1.jpg"); }
     .section-testimonials .carousel-item--2 {
@@ -5791,11 +5811,17 @@ section {
         transition: all 0.2s; }
     .section-testimonials .carousel-indicators .img-fluid {
       display: block; }
+  .section-testimonials .carousel .fi {
+    font-size: 2.5rem; }
 
 .header .navbar-toggler {
   border: none; }
   .header .navbar-toggler i {
     font-size: 1.625rem; }
+
+@media (max-width: 991px) {
+  .header .container {
+    max-width: 100%; } }
 
 .footer {
   align-items: center;
