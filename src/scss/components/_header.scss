@@ -5,4 +5,9 @@
       font-size: rem(26);
     }
   }
+  .container {
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+    }
+  }
 }

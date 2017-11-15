@@ -2,14 +2,25 @@
   .carousel {
     position: relative;
     color: $white;
+    position: relative;
 
+    &__title {
+      position: absolute;
+      top: $space * 4;
+      left: 0;
+      width: 100%;
+      z-index: 9;
+    }
     &-item {
-
       height: 100%;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      padding: ($spacer * 8) 0 ($spacer * 14);
+      padding: ($spacer * 10) 0 ($spacer * 14);
+
+      @include media-breakpoint-up(sm) {
+        padding: ($spacer * 14) 0 ($spacer * 14);
+      }
 
       &--1 {
         background-image: url("../img/testimonial/testimonial-1.jpg");
@@ -67,6 +78,9 @@
       .img-fluid {
         display: block;
       }
+    }
+    .fi {
+      font-size: rem(40);
     }
   }
 }

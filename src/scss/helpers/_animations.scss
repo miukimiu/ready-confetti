@@ -1,0 +1,13 @@
+.btn {
+  transition: all 300ms ease-in;
+  transform: scale(1);
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  }
+  &.disabled:hover {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
