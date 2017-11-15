@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.0.0-beta (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -5591,9 +5592,6 @@ Forms
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased; }
 
-.flaticon-quotes:before {
-  content: "\f100"; }
-
 .flaticon-chevron-left:before {
   content: "\f100"; }
 
@@ -5603,43 +5601,43 @@ Forms
 .flaticon-quotes:before {
   content: "\f102"; }
 
-.flaticon-website:before {
+.flaticon-menu:before {
   content: "\f103"; }
 
-.flaticon-visual-design:before {
+.flaticon-envelope-of-white-paper:before {
   content: "\f104"; }
 
-.flaticon-photos:before {
+.flaticon-facebook-logo:before {
   content: "\f105"; }
 
-.flaticon-invitation:before {
+.flaticon-visual-design:before {
   content: "\f106"; }
 
-.flaticon-party-in-house:before {
+.flaticon-cancel:before {
   content: "\f107"; }
 
-.flaticon-cupcake:before {
+.flaticon-photos:before {
   content: "\f108"; }
 
 .flaticon-dj:before {
   content: "\f109"; }
 
-.flaticon-menu:before {
+.flaticon-cupcake:before {
   content: "\f10a"; }
 
-.flaticon-cancel:before {
+.flaticon-party-in-house:before {
   content: "\f10b"; }
 
-.flaticon-instagram:before {
+.flaticon-website:before {
   content: "\f10c"; }
 
-.flaticon-facebook-logo:before {
+.flaticon-instagram:before {
   content: "\f10d"; }
 
-.flaticon-envelope-of-white-paper:before {
+.flaticon-twitter-logo-silhouette:before {
   content: "\f10e"; }
 
-.flaticon-twitter-logo-silhouette:before {
+.flaticon-invitation:before {
   content: "\f10f"; }
 
 html {
@@ -5760,7 +5758,7 @@ section {
       border-left: none;
       margin: 0; }
       .section-testimonials .carousel-item blockquote p:before {
-        content: "\f100";
+        content: "";
         font-size: 20px;
         font-family: "Flaticon";
         float: left;
