@@ -1,3 +1,5 @@
+$confetti-width: 316px;
+
 .section-home {
   padding: ($spacer * 6) 0 ($spacer * 6);
 
@@ -9,5 +11,28 @@
   }
   @include media-breakpoint-down(sm) {
     text-align: center;
+  }
+  &__illustration {
+    position: relative;
+    text-align: center;
+
+    @include media-breakpoint-down(xs) {
+      max-width: 250px;
+      margin: 0 auto;
+      padding-bottom: $spacer;
+    }
+  }
+  &__confetti {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: - ($confetti-width / 2);
+
+    @include media-breakpoint-down(xs) {
+      max-width: 250px;
+      margin: 0 auto;
+      margin-left: - 125px;
+      top: -30px;
+    }
   }
 }

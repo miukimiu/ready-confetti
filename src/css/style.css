@@ -5570,6 +5570,51 @@ Grid
     transform: scale(1);
     box-shadow: none; }
 
+#heart {
+  animation: heartbeat 3s infinite;
+  transform-origin: 158px 0; }
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.85); }
+  20% {
+    transform: scale(1); }
+  40% {
+    transform: scale(0.85); }
+  60% {
+    transform: scale(1); }
+  80% {
+    transform: scale(0.85); }
+  100% {
+    transform: scale(0.85); } }
+
+.confetti-a {
+  animation: shine 4s linear infinite; }
+
+.confetti-b {
+  animation: shine 4s linear 2s infinite; }
+
+.confetti-c {
+  animation: shine 4s linear 3s infinite; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes shine {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes shineInverted {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 /************************
 Breakpoints
 ************************/
@@ -5706,6 +5751,25 @@ section {
   @media (max-width: 767px) {
     .section-home {
       text-align: center; } }
+  .section-home__illustration {
+    position: relative;
+    text-align: center; }
+    @media (max-width: 575px) {
+      .section-home__illustration {
+        max-width: 250px;
+        margin: 0 auto;
+        padding-bottom: 1rem; } }
+  .section-home__confetti {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -158px; }
+    @media (max-width: 575px) {
+      .section-home__confetti {
+        max-width: 250px;
+        margin: 0 auto;
+        margin-left: -125px;
+        top: -30px; } }
 
 .section-about {
   padding: 4rem 0 4rem; }
@@ -5735,14 +5799,15 @@ section {
     color: #dc3545; }
 
 .section-services {
-  padding: 6rem 0 6rem; }
+  padding: 4rem 0 6rem; }
   @media (min-width: 576px) {
     .section-services {
-      padding: 8rem 0 8rem; } }
+      padding: 6rem 0 8rem; } }
   .section-services__item {
     text-align: center; }
     .section-services__item i {
-      font-size: 2.5rem; }
+      font-size: 2.5rem;
+      color: #FF4776; }
     @media (max-width: 767px) {
       .section-services__item {
         padding-bottom: 5rem; }

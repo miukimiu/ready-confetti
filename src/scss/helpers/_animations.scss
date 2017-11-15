@@ -6,8 +6,63 @@
     transform: scale(1.1);
     box-shadow: 0 2px 10px rgba(0,0,0,0.15);
   }
+
   &.disabled:hover {
     transform: scale(1);
     box-shadow: none;
+  }
+}
+#heart {
+  animation: heartbeat 3s infinite;
+  transform-origin: 158px 0;
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(.85);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(.85);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(.85);
+  }
+  100% {
+    transform: scale(.85);
+  }
+}
+
+.confetti-a {
+  animation: shine 4s linear infinite;
+}
+.confetti-b {
+  animation: shine 4s linear 2s infinite;
+}
+.confetti-c {
+  animation: shine 4s linear 3s infinite;
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes shine {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes shineInverted {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
