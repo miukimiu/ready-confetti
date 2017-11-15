@@ -1,7 +1,5 @@
-# Bootstrap 4 Starter Pack (BETA 4.0.0)
-
-Includes complete Bootstrap 4.0.0-beta dev environment with gulp and sass
-
+# Ready Confetti 
+A Bootstrap 4 one page wedding planner template
 
 ### Version
 
@@ -20,3 +18,6 @@ npm start
 ```
 
 Files are compiled into /src
+
+## Built With
+This project started with this amazing starter pack for Bootstrap 4 Beta: https://github.com/bradtraversy/bs4starter
