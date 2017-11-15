@@ -1,0 +1,18 @@
+.section-about {
+  padding: ($spacer * 4) 0 ($spacer * 4);
+
+  @include media-breakpoint-up(sm) {
+    padding: ($spacer * 4) 0 ($spacer * 8);
+  }
+  &__block {
+    padding: ($spacer * 3) 0;
+
+    @include media-breakpoint-up(sm) {
+      padding: ($spacer * 4) 0;
+    }
+
+    p {
+      padding-top: $spacer;
+    }
+  }
+}

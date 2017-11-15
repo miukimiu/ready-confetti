@@ -1,0 +1,23 @@
+.section-services {
+  padding: ($spacer * 6) 0 ($spacer * 6);
+
+  @include media-breakpoint-up(sm) {
+    padding: ($spacer * 8) 0 ($spacer * 8);
+  }
+
+  &__item {
+    text-align: center;
+    i {
+      font-size: rem(40);
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding-bottom: $space * 4;
+
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+
+  }
+}

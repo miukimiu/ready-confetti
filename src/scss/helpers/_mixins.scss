@@ -1,0 +1,92 @@
+/************************
+Breakpoints
+************************/
+@mixin tablet-down {
+    @media only screen and (max-width: $tablet - 1) {
+        @content;
+    }
+}
+@mixin tablet-up {
+    @media only screen and (min-width: $tablet) {
+        @content;
+    }
+}
+@mixin desktop-up {
+    @media only screen and (min-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin appearance-none {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+@function rem($pxval) {
+  $base: 16;
+  @return ($pxval / $base) * 1rem;
+}
+
+/************************
+Forms
+************************/
+@mixin form-button {
+  box-sizing: border-box;
+  cursor: pointer;
+  min-height: rem(40);
+  padding: rem(12) rem(24);
+  margin-bottom: rem(10);
+  font-family: inherit;
+  font-size: rem(16);
+  border: none;
+  border-radius: rem(3);
+  outline: none;
+  text-decoration: none;
+  background-color: $form-accent-color;
+  font-weight: 600;
+
+  &::-moz-focus-inner {
+    border: 0; /* Removes dotted line in Firefox */
+  }
+
+  &:hover, &:focus {
+    background: darken($green, 5%);
+  }
+
+  &:active {
+    box-shadow: inset 0 rem(2) 0 darken($form-accent-color, 10%);
+  }
+
+  &:disabled {
+    color: darken($form-disabled-color, 30%);
+    background-color: $form-disabled-color;
+    cursor: not-allowed;
+
+    &:hover, &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+@mixin form-text {
+  box-sizing: border-box;
+  min-height: rem(40);
+  width: 100%;
+  padding: rem(10);
+  margin-bottom: rem(10);
+  font-family: inherit;
+  font-size: rem(14);
+  vertical-align: middle;
+  border: rem(1) solid lighten($form-base-color, 10%);
+  border-radius: rem(3);
+  outline: none;
+  background-color: white;
+
+  &:focus {
+    border-color: $form-accent-color;
+  }
+
+  &:disabled {
+    background-color: $form-disabled-color;
+    cursor: not-allowed;
+  }
+}

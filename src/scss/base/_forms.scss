@@ -1,0 +1,53 @@
+$form-base-color: #777 !default;
+$form-accent-color: $green !default;
+$form-disabled-color: #eee !default;
+
+.form {
+  &--inline {
+    display: inline-flex;
+    width: 100%;
+
+    @media (max-width: $tablet) {
+      display: block;
+    }
+
+    > input[type=text],
+    > input[type=url],
+    > input[type=email],
+    > input[type=password]
+    > input[type=number], {
+      margin-right: $space / 2;
+
+      @media (max-width: $tablet) {
+        margin-right: 0;
+        margin-bottom: $space;
+      }
+    }
+  }
+  &--vertical {
+    > input[type=text],
+    > input[type=url],
+    > input[type=email],
+    > input[type=password]
+    > input[type=number], {
+      margin-bottom: $space;
+    }
+  }
+}
+
+input[type=text],
+input[type=url],
+input[type=email],
+input[type=password],
+input[type=number] {
+  @include form-text;
+}
+
+input[type=submit],
+input[type=button],
+button,
+.button {
+  @include appearance-none;
+  @include form-button;
+  color: $white;
+}
