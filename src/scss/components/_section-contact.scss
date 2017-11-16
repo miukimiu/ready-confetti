@@ -20,4 +20,14 @@
       color: $form-feedback-invalid-color;
     }
   }
+  .page-title {
+    padding-bottom: $spacer * 3;
+
+    @include media-breakpoint-up(sm) {
+      padding-bottom: $spacer * 2;
+    }
+  }
+  .leading {
+    padding-bottom: $spacer * 2;
+  }
 }

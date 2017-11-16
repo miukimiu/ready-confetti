@@ -50,3 +50,15 @@ section {
     padding-bottom: $spacer;
   }
 }
+html {
+  font-size: 1rem;
+}
+body {
+  line-height: 1.6;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.18rem;
+  }
+}
