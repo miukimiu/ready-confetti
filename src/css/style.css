@@ -5825,6 +5825,10 @@ body {
     .section-services__item i {
       font-size: 2.5rem;
       color: #FF4776; }
+    @media (min-width: 576px) {
+      .section-services__item p {
+        text-align: left;
+        font-size: 1rem; } }
     @media (max-width: 767px) {
       .section-services__item {
         padding-bottom: 5rem; }
